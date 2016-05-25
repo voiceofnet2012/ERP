@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context="com.jzg.erp.view.ButtonTestActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:text="CustomImageButton" />
+
+        <com.jzg.erp.widget.button.CustomImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:scaleType="fitCenter"
+            app:pressed_src="@drawable/ic_btn_go_menu_pressed"
+            app:unpressed_src="@drawable/ic_btn_go_menu" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:text="CustomImageButton" />
+
+        <com.jzg.erp.widget.button.CustomButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Custom Button"
+            app:pressed_color="@color/pressed_color_s"
+            app:shape_type="rectangle"
+            app:unpressed_color="@color/unpressed_color_s" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:text="With Round Corner" />
+
+        <com.jzg.erp.widget.button.CustomButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Custom Button"
+            app:pressed_color="@color/pressed_color_s2"
+            app:round_radius="10dp"
+            app:shape_type="rectangle"
+            app:unpressed_color="@color/unpressed_color_s2" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:text="Circle CustomButton" />
+
+        <com.jzg.erp.widget.button.CustomButton
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:text="Custom Button"
+            app:pressed_color="@color/pressed_color_s3"
+            app:shape_type="circle"
+            app:unpressed_color="@color/unpressed_color_s3" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:text="CustomRippleButton" />
+
+        <com.jzg.erp.widget.button.CustomRippleButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Custom RippleButton"
+            app:ripple_color="@color/ripple_color_s"
+            app:ripple_duration="500"
+            app:shape_type="rectangle"
+            app:unpressed_color="@color/unpressed_color_s" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:text="With Round Corner" />
+
+        <com.jzg.erp.widget.button.CustomRippleButton
+            android:id="@+id/btn_cusRippleBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Custom RippleButton"
+            app:ripple_color="@color/unpressed_color_s2"
+            app:ripple_duration="500"
+            app:round_radius="10dp"
+            app:shape_type="rectangle"
+            app:unpressed_color="@color/unpressed_color_s" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:text="Circle CustomRippleButton" />
+
+        <com.jzg.erp.widget.button.CustomRippleButton
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:text="Custom RippleButton"
+            android:textSize="9sp"
+            app:ripple_color="@color/unpressed_color_s3"
+            app:ripple_duration="1000"
+            app:shape_type="circle"
+            app:unpressed_color="@color/unpressed_color_s" />
+    </LinearLayout>
+
+</LinearLayout>
